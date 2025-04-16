@@ -1,10 +1,15 @@
 ﻿namespace Inheritance_Mangum_Stephen
 {
-    internal class Program
+    using System;
+
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Fortnite myGame = new Fortnite("E", "Fortnite"); // Creates a new Fortnite object and gives it the ESRB rating and name (Fortnite).
+            Console.WriteLine(myGame.Describe()); // Calls Describe and prints the information to the console
+            myGame.PlayGame(); // Starts Fortnite!! YAY.
         }
     }
+
 }
